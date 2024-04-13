@@ -49,7 +49,7 @@ app.put("/facultades/:id", async (req, res) => {
       const id = req.params.id; // Obtener el ID del parámetro de la URL
       const { nombre } = req.body; // Obtener los datos actualizados del cuerpo de la solicitud
       
-      // Verificar si el ID es válido (puedes agregar más validaciones según tus necesidades)
+      // Verificar si el ID es válido 
       if (!id) {
         return res.status(400).json({ error: "Se requiere proporcionar un ID válido" });
       }
@@ -78,7 +78,7 @@ app.patch("/facultades/:id", async (req, res) => {
       const id = req.params.id; // Obtener el ID del parámetro de la URL
       const { columna, valor } = req.body; // Obtener los datos de la columna y su nuevo valor del cuerpo de la solicitud
       
-      // Verificar si el ID es válido (puedes agregar más validaciones según tus necesidades)
+      // Verificar si el ID es válido 
       if (!id) {
         return res.status(400).json({ error: "Se requiere proporcionar un ID válido" });
       }
@@ -105,7 +105,7 @@ app.delete("/facultades/:id", async (req, res) => {
     try {
       const id = req.params.id; // Obtener el ID del parámetro de la URL
       
-      // Verificar si el ID es válido (puedes agregar más validaciones según tus necesidades)
+      // Verificar si el ID es válido 
       if (!id) {
         return res.status(400).json({ error: "Se requiere proporcionar un ID válido" });
       }
